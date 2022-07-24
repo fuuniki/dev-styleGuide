@@ -1,0 +1,16 @@
+.l-footer {
+  background-color: $color-black;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  &__copylight {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    color: $color-white;
+  }
+}
