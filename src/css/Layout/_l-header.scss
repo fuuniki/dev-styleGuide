@@ -5,6 +5,18 @@
   background-color: $color-base;
   z-index: 1;
 
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: -webkit-linear-gradient(to right, #BE0168, #EBB591);
+    background: -moz-linear-gradient(to right, #BE0168, #EBB591);
+    background: -o-linear-gradient(to right, #BE0168, #EBB591);
+    background: -ms-linear-gradient(to right, #BE0168, #EBB591);
+    background: linear-gradient(to right, #BE0168, #EBB591);
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;

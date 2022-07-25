@@ -27,12 +27,15 @@
 * Component
 *--------------------------------------*/
 @import "Object/Component/_c-inner.scss";
+@import "Object/Component/_section.scss";
 @import "Object/Component/_c-button.scss";
 
 /*--------------------------------------*
 * Project
 *--------------------------------------*/
 @import "Object/Project/_p-card.scss";
+@import "Object/Project/_p-fv.scss";
+@import "Object/Project/_latestArticle.scss";
 
 /*--------------------------------------*
 * Utility
