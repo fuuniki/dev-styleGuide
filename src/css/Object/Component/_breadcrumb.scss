@@ -1,0 +1,12 @@
+.c-breadcrumb {
+  &__lists {
+    font-size: 1.2rem;
+  }
+  &__list {
+    display: inline-block;
+  }
+  &__listLink {
+    color: #444;
+    text-decoration: none;
+  }
+}

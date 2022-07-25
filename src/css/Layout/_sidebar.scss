@@ -1,0 +1,14 @@
+.l-sidebar {
+  width: 300px;
+  margin-left: auto;
+  margin-top: 10px;
+  padding-bottom: 40px;
+  word-wrap: break-word;
+  &__module {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  &__moduleBody {
+
+  }
+}

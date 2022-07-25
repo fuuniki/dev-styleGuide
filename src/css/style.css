@@ -112,6 +112,20 @@ a:hover img {
 }
 
 /* l-main*/
+.l-sidebar {
+  width: 300px;
+  margin-left: auto;
+  margin-top: 10px;
+  padding-bottom: 40px;
+  word-wrap: break-word;
+}
+.l-sidebar__module {
+  font-size: 90%;
+  margin-bottom: 20px;
+  clear: both;
+  overflow: hidden;
+}
+
 /* l-wrapper */
 /* l-container */
 /* l-inner */
@@ -119,6 +133,10 @@ a:hover img {
   max-width: 1160px;
   margin: 0 auto;
   padding: 10px 30px;
+}
+
+.l-container {
+  display: flex;
 }
 
 /*--------------------------------------*
@@ -151,6 +169,17 @@ a:hover img {
   left: 0;
   transform: translateY(-50%);
   background: linear-gradient(#be0168, #ebb591);
+}
+
+.c-breadcrumb__lists {
+  font-size: 1.2rem;
+}
+.c-breadcrumb__list {
+  display: inline-block;
+}
+.c-breadcrumb__listLink {
+  color: #444;
+  text-decoration: none;
 }
 
 /*--------------------------------------*
@@ -209,6 +238,11 @@ a:hover img {
   margin-right: 2px;
   font-family: FontAwesome;
   content: "\f07b";
+}
+
+.p-archive__heading {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
 }
 
 /*--------------------------------------*
