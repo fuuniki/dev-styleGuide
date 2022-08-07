@@ -5,18 +5,20 @@
   }
 }
 
+.slider {
+  margin-bottom: 48px;
+  padding: 0;
+  line-height: 0;
+  position: relative;
+}
+
 .slick-dots {
   position: absolute;
-bottom: -25px;
-display: block;
-width: 100%;
-padding: 0;
-margin: 0;
-list-style: none;
-text-align: center;
-
-  position: relative;
-  bottom: 0;
+  bottom: -48px;
+  display: block;
+  width: 100%;
+  list-style: none;
+  text-align: center;
   padding: 20px 0;
 }
 .slick-dots li {

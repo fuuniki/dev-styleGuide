@@ -303,17 +303,20 @@ a:hover img {
   background: #eee;
 }
 
+.slider {
+  margin-bottom: 48px;
+  padding: 0;
+  line-height: 0;
+  position: relative;
+}
+
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -48px;
   display: block;
   width: 100%;
-  padding: 0;
-  margin: 0;
   list-style: none;
   text-align: center;
-  position: relative;
-  bottom: 0;
   padding: 20px 0;
 }
 
@@ -344,6 +347,13 @@ a:hover img {
   background: transparent;
 }
 
+.p-side__articleList {
+  width: 100%;
+}
+.p-side__list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .p-side__listItem {
   display: inline-block;
   font-size: 12px;
@@ -391,8 +401,6 @@ a:hover img {
   margin-right: 2%;
   padding: 0 5px 0 5px;
   position: relative;
-  z-index: 1;
-  overflow: hidden;
 }
 .p-archive__list::before {
   content: "";
