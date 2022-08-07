@@ -1,0 +1,18 @@
+.c-list {
+  padding: 0 0.6em;
+  &__item {
+    margin-bottom: 0.6em;
+  }
+  &__link {
+    color: #333;
+    text-decoration: none;
+  }
+  &--arrowStart &__item {
+    &::before {
+      content: '\f054';
+      margin-right: 5px;
+      font-family: FontAwesome;
+    }
+  }
+
+}

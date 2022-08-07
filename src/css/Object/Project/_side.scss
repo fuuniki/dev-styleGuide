@@ -1,0 +1,24 @@
+.p-side {
+  &__list {
+  }
+  &__listItem {
+    display: inline-block;
+    font-size: 12px;
+    float: left;
+  }
+  &__listLink {
+    display: block;
+    margin: 0 5px 5px;
+    border-radius: 3px;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+
+    &::before {
+      margin-right: 5px;
+      font-family: FontAwesome;
+      content: '\f054';
+    }
+  }
+
+}

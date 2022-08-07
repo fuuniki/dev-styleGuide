@@ -10,161 +10,203 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta name="thumbnail" content="metathum.jpg">
 
-    <!-- css -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/src/css/style.css">
-
     <!-- js library -->
-    <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
     <script src="bodyScrollLock.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet" >
+
+    <!-- css -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/src/css/style.css" rel="stylesheet">
 
 
     <title>Style Guide for devlop the website</title>
 
   </head>
   <body>
-    <header class="l-header">
+    <div class="l-wrapper">
+
+      <header class="l-header">
+        <div class="l-inner">
+          <div class="l-header__content">
+            <a class="l-header__logo" href="#">
+              <div class="l-header__site-title">fuuniki.tokyo</div>
+              <p class="l-header__site-description">旅の記録と写真をお届け</p>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="p-mainvisual">
+        <div class="p-mainvisual__bg">
+
+          <div class="l-inner">
+            <div class="slider">
+        			<div class="slider-item"><img class="slider-img" src="https://placehold.jp/1160x420.png"></div>
+        			<div class="slider-item"><img class="slider-img" src="https://placehold.jp/1160x420.png"></div>
+        		</div>
+          </div>
+        </div>
+      </div>
+
       <div class="l-inner">
-        <div class="l-header__content">
-          <a class="l-header__logo" href="#">
-            <h1 class="l-header__site-title">fuuniki.tokyo</h1>
-            <p class="l-header__site-description">旅の記録と写真をお届け</p>
-          </a>
-        </div>
-      </div>
-    </header>
+        <h2 class="c-title">新着記事</h2>
 
-    <main class="l-main">
+        <form class="c-search" action="/" method="get">
+          <label class="c-search__readerText" for="s"></label>
+          <input class="c-search__input" id="s" type="text"  name="s" value="" placeholder="記事を検索" required>
+          <input class="c-search__submit" type="submit">
+        </form>
 
-      <section class="p-fv">
-        <div class="l-inner">
-          <figure class="p-fv__content">
-            <img class="p-fv__img" src="https://placehold.jp/1160x420.png" alt="">
-          </figure>
-        </div>
-      </section>
-
-      <section class="p-latestArticle c-section">
-        <div class="l-inner">
-          <h2 class="c-section__title">新着記事</h2>
-          <ul class="p-latestArticle__items">
-            <li class="p-latestArticle__item">
-              <a class="p-latestArticle__imgLink" href="#">
-                <img class="p-latestArticle__thumbnail" src="https://placehold.jp/600x320.png" alt="">
-              </a>
-              <a class="p-latestArticle__dateLink" href="#">2021年12月23日</a>
-              <h3 class="p-latestArticle__title">
-                <a class="p-latestArticle__titleLink" href="#">記事のタイトルです</a>
-              </h3>
-              <div class="p-latestArticle__categories">
-                <a class="p-latestArticle__category" href="#">カテゴリ</a>
-                <a class="p-latestArticle__category" href="#">カテゴリ</a>
-              </div>
-            </li>
-            <li class="p-latestArticle__item">
-              <a class="p-latestArticle__imgLink" href="#">
-                <img class="p-latestArticle__thumbnail" src="https://placehold.jp/600x320.png" alt="">
-              </a>
-              <a class="p-latestArticle__dateLink" href="#">2021年12月23日</a>
-              <h3 class="p-latestArticle__title">
-                <a class="p-latestArticle__titleLink" href="#">記事のタイトルです</a>
-              </h3>
-              <div class="p-latestArticle__categories">
-                <a class="p-latestArticle__category" href="#">カテゴリ</a>
-                <a class="p-latestArticle__category" href="#">カテゴリ</a>
-              </div>
-            </li>
-            <li class="p-latestArticle__item">
-              <a class="p-latestArticle__imgLink" href="#">
-                <img class="p-latestArticle__thumbnail" src="https://placehold.jp/600x320.png" alt="">
-              </a>
-              <a class="p-latestArticle__dateLink" href="#">2021年12月23日</a>
-              <h3 class="p-latestArticle__title">
-                <a class="p-latestArticle__titleLink" href="#">記事のタイトルです</a>
-              </h3>
-              <div class="p-latestArticle__categories">
-                <a class="p-latestArticle__category" href="#">カテゴリ</a>
-                <a class="p-latestArticle__category" href="#">カテゴリ</a>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-      <div class="c-breadcrumb">
-        <div class="l-inner">
-          <ul class="c-breadcrumb__lists">
-            <li class="c-breadcrumb__list"><a class="c-breadcrumb__listLink" href="#">ホーム</a></li>
-            <li class="c-breadcrumb__list"><span>カテゴリ</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <section class="c-section">
-        <div class="l-inner">
-          <div class="l-container">
-            <section class="p-archive">
-              <h2 class="p-archive__heading">カテゴリー記事の一覧です</h2>
-              <ul class="p-archive__entries">
-                <li class="p-archive__entry">
-                  <a class="" href="#">
-                    <img class="" src="" alt="">
-                  </a>
-                </li>
-              </ul>
-            </section>
-
-            <aside class="l-sidebar">
-              <div class="l-sidebar__module">
-                <h2 class="c-section__title">サイト内検索はこちら</h2>
-                <div class="l-section__Body">
-                  <form class="c-" action="index.html" method="post">
-
-                  </form>
-                  <form role="search" method="get" id="searchform" class="search-form" action="https://www.fuuniki.tokyo/">
-                    <label class="screen-reader-text" for="s"></label>
-                    <input type="text" name="s" id="s" class="search-module-input" value="" placeholder="記事を検索" required="">
-                    <input type="submit" value="検索" id="searchsubmit" class="search-module-button">
-                  </form>
-                </div>
-              </div>
-              <div class="l-sidebar__module">
-                <h2 class="c-section__title">新着記事</h2>
-              </div>
-              <div class="l-sidebar__module">
-                <h2 class="c-section__title">カテゴリー</h2>
-              </div>
-              <div class="l-sidebar__module">
-                <h2 class="c-section__title">タグ</h2>
-              </div>
-              <div class="l-sidebar__module">
-                <h2 class="c-section__title">月別アーカイブ</h2>
-              </div>
-            </aside>
-
+        <div class="p-latestArticle">
+          <div class="c-card p-latestArticle__list">
+            <a class="c-card__imgLink" href="#"><img class="c-card__img" src="https://placehold.jp/600x320.png" alt=""></a>
+            <div class="c-card__date"><a class="c-card__dateLink" href="#">2021年12月23日</a></div>
+            <h3 class="c-card__title"><a class="c-card__titleLink" href="#">記事のタイトル</a></h3>
+            <div class="c-card__categories">
+              <a class="c-card__category" href="#">カテゴリ</a>
+              <a class="c-card__category" href="#">カテゴリ</a>
+            </div>
+          </div>
+          <div class="c-card p-latestArticle__list">
+            <a class="c-card__imgLink" href="#"><img class="c-card__img" src="https://placehold.jp/600x320.png" alt=""></a>
+            <div class="c-card__date"><a class="c-card__dateLink" href="#">2021年12月23日</a></div>
+            <h3 class="c-card__title"><a class="c-card__titleLink" href="#">記事のタイトル</a></h3>
+            <div class="c-card__categories">
+              <a class="c-card__category" href="#">カテゴリ</a>
+              <a class="c-card__category" href="#">カテゴリ</a>
+            </div>
+          </div>
+          <div class="c-card p-latestArticle__list">
+            <a class="c-card__imgLink" href="#"><img class="c-card__img" src="https://placehold.jp/600x320.png" alt=""></a>
+            <div class="c-card__date"><a class="c-card__dateLink" href="#">2021年12月23日</a></div>
+            <h3 class="c-card__title"><a class="c-card__titleLink" href="#">記事のタイトル</a></h3>
+            <div class="c-card__categories">
+              <a class="c-card__category" href="#">カテゴリ</a>
+              <a class="c-card__category" href="#">カテゴリ</a>
+            </div>
           </div>
 
         </div>
-      </section>
 
-
-
-    </main>
-
-    <footer class="l-footer">
-      <div class="l-inner">
-        <div class="l-footer__content">
-          <small class="l-footer__copylight">© fuuniki.tokyo 2022</small>
-        </div>
       </div>
-    </footer>
+
+      <div class="l-inner">
+        <div class="" style="display:flex;">
+          <main class="l-main p-archive">
+
+            <h2 class="p-archive__heading">カテゴリー記事の一覧です</h2>
+
+            <div class="p-archive__entries">
+              <div class="c-card p-archive__list">
+                <a class="c-card__imgLink" href="#"><img class="c-card__img" src="https://placehold.jp/600x320.png" alt=""></a>
+                <div class="c-card__date"><a class="c-card__dateLink" href="#">2021年12月23日</a></div>
+                <h3 class="c-card__title"><a class="c-card__titleLink" href="#">記事のタイトル</a></h3>
+                <div class="c-card__categories p-archive__categories">
+                  <a class="c-card__category p-archive__category" href="#">カテゴリ</a>
+                  <a class="c-card__category p-archive__category" href="#">カテゴリ</a>
+                </div>
+                <p class="c-card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+              <div class="c-card p-archive__list">
+                <a class="c-card__imgLink" href="#"><img class="c-card__img" src="https://placehold.jp/600x320.png" alt=""></a>
+                <div class="c-card__date"><a class="c-card__dateLink" href="#">2021年12月23日</a></div>
+                <h3 class="c-card__title"><a class="c-card__titleLink" href="#">記事のタイトル</a></h3>
+                <div class="c-card__categories p-archive__categories">
+                  <a class="c-card__category p-archive__category" href="#">カテゴリ</a>
+                  <a class="c-card__category p-archive__category" href="#">カテゴリ</a>
+                </div>
+                <p class="c-card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+              <div class="c-card p-archive__list">
+                <a class="c-card__imgLink" href="#"><img class="c-card__img" src="https://placehold.jp/600x320.png" alt=""></a>
+                <div class="c-card__date"><a class="c-card__dateLink" href="#">2021年12月23日</a></div>
+                <h3 class="c-card__title"><a class="c-card__titleLink" href="#">記事のタイトル</a></h3>
+                <div class="c-card__categories p-archive__categories">
+                  <a class="c-card__category p-archive__category" href="#">カテゴリ</a>
+                  <a class="c-card__category p-archive__category" href="#">カテゴリ</a>
+                </div>
+                <p class="c-card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+
+            </div>
+
+          </main>
+
+          <aside class="l-aside">
+            <div class="l-aside__module">
+              <h2 class="c-title">サイト内検索はこちら</h2>
+              <form class="c-search" action="/" method="get">
+                <label class="c-search__readerText" for="s"></label>
+                <input class="c-search__input" id="s" type="text"  name="s" value="" placeholder="記事を検索" required>
+                <input class="c-search__submit" type="submit">
+              </form>
+            </div>
+            <div class="l-aside__module">
+              <h2 class="c-title">新着記事</h2>
+            </div>
+            <div class="l-aside__module">
+              <h2 class="c-title">カテゴリー</h2>
+              <ul class="p-side__list">
+                <li class="p-side__listItem">
+                  <a class="p-side__listLink" href="#">aa</a>
+                </li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+              </ul>
+            </div>
+            <div class="l-aside__module">
+              <h2 class="c-title">タグ</h2>
+              <ul class="p-side__list">
+                <li class="p-side__listItem">
+                  <a class="p-side__listLink" href="#">aa</a>
+                </li>
+                <li class="p-side__listItem">
+                  <a class="p-side__listLink" href="#">aa</a>
+                </li>
+              </ul>
+            </div>
+            <div class="l-aside__module">
+              <h2 class="c-title">月別アーカイブ</h2>
+              <ul class="p-monthlyArchive js-monthlyArchive">
+                <li class="p-monthlyArchive__year">
+                  <div class="p-monthlyArchive__yearHeading js-yearHeading"><span class="p-monthlyArchive__toggleIcon js-toggleIcon open"></span>2021年 (2)</div>
+                  <ul class="p-monthlyArchive__months js-months">
+                    <li class="p-monthlyArchive__month"><a class="p-monthlyArchive__monthLink" href="/">2021年12月</a> (2)</li>
+                    <li class="p-monthlyArchive__month"><a class="p-monthlyArchive__monthLink" href="/">2021年11月</a> (2)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+
+      <footer class="l-footer">
+        <div class="l-inner">
+          <div class="l-footer__content">
+            <small class="l-footer__copylight">© fuuniki.tokyo 2022</small>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+
+
+
+
+
 
     <!-- js -->
-    <script src="/src/js/script.js"></script>
+    <script src="/src/js/script.js" async defer></script>
 
   </body>
 </html>

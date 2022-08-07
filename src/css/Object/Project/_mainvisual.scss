@@ -1,0 +1,46 @@
+.p-mainvisual {
+  padding-bottom: 20px;
+  &__bg {
+    background: #eee;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+bottom: -25px;
+display: block;
+width: 100%;
+padding: 0;
+margin: 0;
+list-style: none;
+text-align: center;
+
+  position: relative;
+  bottom: 0;
+  padding: 20px 0;
+}
+.slick-dots li {
+  display: inline-block!important;
+  background: #e3b4be!important;
+  width: 60px!important;
+  height: 8px!important;
+  border-radius: 0;
+  cursor: pointer;
+}
+.slick-dots li.slick-active {
+  background: #af2767!important;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
