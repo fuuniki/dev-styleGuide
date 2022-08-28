@@ -1,0 +1,15 @@
+.p-banner {
+  padding: 45px 0;
+  background: #efefef;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin: 0 10px;
+    border: 1px solid #d7d3d4;
+  }
+}

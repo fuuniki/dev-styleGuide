@@ -24,6 +24,8 @@
 @import "Layout/_main.scss";
 /* l-main*/
 @import "Layout/_aside.scss";
+/* l-main*/
+@import "Layout/_nav.scss";
 
 
 /*--------------------------------------*
@@ -44,6 +46,8 @@
 @import "Object/Project/_latestArticle.scss";
 @import "Object/Project/_archive.scss";
 @import "Object/Project/_monthlyArchive.scss";
+@import "Object/Project/_banner.scss";
+@import "Object/Project/_article.scss";
 
 /*--------------------------------------*
 * Utility

@@ -32,3 +32,16 @@ jQuery(function($) {
     }
   });
 });
+
+/* grobal-nav */
+$(".l-nav__hamburger").click(function () {//ボタンがクリックされたら
+	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $("#js-global-nav").toggleClass('js-panelActive');//ナビゲーションにpanelactiveクラスを付与
+    $(".l-nav__bg").toggleClass('js-circleActive');//丸背景にcircleactiveクラスを付与
+});
+
+$("#js-global-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+    $("#js-global-nav").removeClass('js-panelActive');//ナビゲーションのpanelactiveクラスを除去
+    $(".l-nav__bg").removeClass('js-circleActive');//丸背景のcircleactiveクラスを除去
+});
