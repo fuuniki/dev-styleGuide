@@ -144,12 +144,60 @@
 
             <article class="p-article">
               <div class="p-article__header">
-                <h2 class="p-article__title">記事タイトル</h2>
+                <h1 class="p-article__title">記事タイトル</h1>
+                <div class="p-article__element">
+                  <div class="p-article__elementList p-article__elementList--category">
+                    <a href="#">category</a>
+                  </div>
+                  <div class="p-article__elementList p-article__elementList--tag">
+                    <a href="#">tag</a>
+                  </div>
+                  <div class="p-article__elementList p-article__elementList--date">公開日</div>
+                </div>
+                <img class="p-article__eyeCatching" src="https://placehold.jp/900x600.png" alt="">
               </div>
               <div class="p-article__content">
-                <img class="p-article__eyeCatching" src="https://placehold.jp/900x600.png" alt="">
-
+                <h2>h2タイトル</h2>
+                <h3>h3タイトル</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテ<br>キストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <h3>h3タイトル</h3>
+                <p>テキスト<a>テキスト</a>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <ul>
+                  <li>リスト</li>
+                  <li>リスト</li>
+                </ul>
+                <figure>
+                  <img src="https://placehold.jp/750x500.png" alt="">
+                  <figcaption>フィギュアキャプション</figcaption>
+                </figure>
+                <p>テキスト<strong>テキストテキスト</strong>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <blockquote cite="http://">
+                  <p>テキスト<a>テキスト</a>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                  <p>テキストテキストテキストテキストテキストテキストテキストテキストテ<br>キストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </blockquote>
+                <div class="googlemap">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12542.032690845055!2d140.84192265!3d38.1980971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a25e8641e0033%3A0x7899b34dc15dc119!2z5rW344Gu6KaL44GI44KL5LiY5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1662478041753!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
               </div>
+              <div class="p-article__footer">
+                <div class="p-sharebtn">
+                  <div class="p-sharebtn__message"></div>
+                  <div class="p-sharebtn__list">
+                    <div class="p-sharebtn__item p-sharebtn__item--twitter">
+                      <a href="http://twitter.com/share?url=[シェアするURL]&text=[ツイート内テキスト]&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank"></a>
+                    </div>
+                    <div class="p-sharebtn__item p-sharebtn__item--facebook">
+                      <a href="https://www.facebook.com/share.php?u=https://www.fuuniki.tokyo/" rel="nofollow noopener noreferrer" target="_blank"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-article__pager">
+                  ページャー
+                </div>
+              </div>
+
+
             </article>
 
           </main>
@@ -239,9 +287,16 @@
         </div>
       </div>
 
+      <div class="c-pagetop">
+        <a class="c-pagetop__button" href="#"></a>
+      </div>
+
       <footer class="l-footer">
         <div class="l-inner">
           <div class="l-footer__content">
+            <ul class="l-footer__nav">
+              <li class="l-footer__navItem"><a href="#">プライバシーポリシー</a></li>
+            </ul>
             <small class="l-footer__copylight">© fuuniki.tokyo 2022</small>
           </div>
         </div>

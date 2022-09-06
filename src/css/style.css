@@ -108,19 +108,30 @@ a:hover img {
 
 /* l-footer */
 .l-footer {
-  background-color: #333;
+  background-color: #efefef;
 }
 .l-footer__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
 }
+.l-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5em 0 1em;
+}
+.l-footer__navItem {
+  font-size: 1.4rem;
+}
+.l-footer__navItem a {
+  color: #333;
+  text-decoration: none;
+}
 .l-footer__copylight {
+  display: block;
   margin: 0 auto;
   text-align: center;
   font-size: 1.6rem;
-  color: #fff;
+  color: #333;
 }
 
 /* l-main*/
@@ -411,6 +422,28 @@ a:hover img {
   text-indent: -9999px;
 }
 
+.c-pagetop {
+  position: fixed;
+  bottom: 2.5em;
+  right: 2.5em;
+}
+.c-pagetop__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #333;
+  border-radius: 50%;
+  color: #333;
+  text-decoration: none;
+}
+.c-pagetop__button::before {
+  font-family: FontAwesome;
+  content: "\f077";
+}
+
 /*--------------------------------------*
 * Project
 *--------------------------------------*/
@@ -617,8 +650,152 @@ a:hover img {
 }
 
 .p-article__title {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.p-article__element {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.p-article__element a {
+  color: #333;
+  text-decoration: none;
+}
+.p-article__elementList {
+  margin-right: 10px;
+}
+.p-article__elementList--category::before {
+  font-family: FontAwesome;
+  content: "\f07b";
+}
+.p-article__elementList--tag::before {
+  font-family: FontAwesome;
+  content: "\f02b";
+}
+.p-article__elementList--date::before {
+  font-family: FontAwesome;
+  content: "\f017";
+}
+.p-article__eyeCatching {
+  margin-top: 30px;
+}
+.p-article__content {
+  margin-top: 60px;
+  padding: 0 15px;
+}
+.p-article__content h2 {
+  margin: 4em -15px 2em;
+  padding: 1em 0.75em;
+  border-top: solid 2px #333;
+  border-bottom: solid 2px #333;
   font-size: 2.4rem;
   font-weight: bold;
+}
+.p-article__content h3 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.p-article__content p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.p-article__content b {
+  font-weight: 700;
+}
+.p-article__content strong {
+  font-weight: 700;
+  background: linear-gradient(transparent 64%, #f7e140 0%);
+}
+.p-article__content ul {
+  margin-bottom: 2rem;
+  padding-left: 25px;
+  list-style: disc;
+}
+.p-article__content figure {
+  margin-bottom: 3rem;
+}
+.p-article__content figcaption {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
+}
+.p-article__content blockquote {
+  margin-bottom: 2rem;
+  padding: 25px 25px 25px 50px;
+  background: #F7F7F7;
+  position: relative;
+}
+.p-article__content blockquote::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: calc(100% - 3em);
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  border-left: solid 1px rgba(180, 180, 180, 0.75);
+  border-right: solid 1px rgba(180, 180, 180, 0.75);
+}
+.p-article__content blockquote p {
+  margin: 8px 0;
+}
+.p-article__content .googlemap {
+  margin-bottom: 2rem;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.p-article__content .googlemap iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.p-article__footer {
+  border-top: 1px dashed #999;
+  margin: 2em 0;
+  padding-top: 2em;
+}
+
+.p-sharebtn {
+  margin: 30px 0;
+}
+.p-sharebtn__list {
+  display: flex;
+  justify-content: center;
+}
+.p-sharebtn__item {
+  flex: 1;
+}
+.p-sharebtn__item:not(:last-child) {
+  margin-right: 4px;
+}
+.p-sharebtn__item--facebook {
+  background: #3b5998;
+}
+.p-sharebtn__item--facebook a::before {
+  font-family: FontAwesome;
+  content: "\f09a";
+}
+.p-sharebtn__item--twitter {
+  background: #1da1f2;
+}
+.p-sharebtn__item--twitter a::before {
+  font-family: FontAwesome;
+  content: "\f099";
+}
+.p-sharebtn__item a {
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
 }
 
 /*--------------------------------------*
