@@ -1,0 +1,48 @@
+.p-privacy {
+  margin-top: 60px;
+  padding: 0 15px;
+  h2 {
+    margin: 4em -15px 2em;
+    padding: 1em 0.75em;
+    border-top: solid 2px #333;
+    border-bottom: solid 2px #333;
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+  h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  b {
+    font-weight: 700;
+  }
+  strong {
+    font-weight: 700;
+    background: linear-gradient(transparent 64%,#f7e140 0%)
+  }
+  a {
+
+  }
+  ul {
+    margin-bottom: 2rem;
+    padding-left: 25px;
+    list-style: disc;
+  }
+  figure {
+    margin-bottom: 3rem;
+  }
+  img {
+
+  }
+  figcaption {
+    margin-top: 1em;
+    font-size: 1.4rem;
+    color: #333;
+    text-align: center;
+  }
+}

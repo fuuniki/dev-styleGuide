@@ -1,0 +1,46 @@
+.c-button {
+  display: block;
+  width: 260px;
+  position: relative;
+  margin: 10px  auto;
+  padding: 8px 1em;
+  background: #fff;
+  border: 1px solid #d0576b;
+  border-radius: 50px;
+
+  text-align: center;
+  color: #d0576b;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+
+  &__btnripple {
+
+    &:hover::before {
+      content: '';
+      /*絶対配置で波形の位置を決める*/
+      position: absolute;
+      left:50%;
+      top:0;
+      /*波形の形状*/
+      border: 1px solid #333;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      /*はじめは不透明*/
+      opacity:1;
+      /*アニメーションの設定*/
+      animation:1s circleanime forwards;
+    }
+  }
+}
+
+@keyframes circleanime{
+	0%{
+	  transform: scale(0);
+	}
+	100%{
+		transform:scale(2);
+		opacity: 0;
+	}
+}

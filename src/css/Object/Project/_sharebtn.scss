@@ -23,6 +23,14 @@
         content: "\f099";
       }
     }
+    &--line {
+      background: #06C857;
+      font-weight: bold;
+      a::before {
+        content: "LINE";
+        display: inline-block;
+      }
+    }
     a {
       display: block;
       padding: 8px 0;

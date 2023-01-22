@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*--------------------------------------*
 * Foundation
 *--------------------------------------*/
@@ -37,7 +38,7 @@ object {
 }
 
 a {
-  color: #0066c0;
+  color: #d0576b;
   text-decoration: underline;
   transition: 0.4s;
 }
@@ -55,6 +56,15 @@ a:hover img {
 * Layout
 *--------------------------------------*/
 /* l-wrapper */
+.l-wrapperFlex {
+  display: flex;
+}
+@media only screen and (max-width: 1024px) {
+  .l-wrapperFlex {
+    flex-wrap: wrap;
+  }
+}
+
 /* l-container */
 .l-container {
   display: flex;
@@ -64,6 +74,11 @@ a:hover img {
 .l-inner {
   max-width: 1160px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 1024px) {
+  .l-inner {
+    width: 95%;
+  }
 }
 
 /* l-header */
@@ -138,6 +153,11 @@ a:hover img {
 .l-main {
   width: 70%;
 }
+@media only screen and (max-width: 1024px) {
+  .l-main {
+    width: 100%;
+  }
+}
 
 /* l-main*/
 .l-aside {
@@ -150,6 +170,11 @@ a:hover img {
 .l-aside__module {
   margin-bottom: 20px;
   overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .l-aside {
+    width: 100%;
+  }
 }
 
 /* l-main*/
@@ -210,6 +235,7 @@ a:hover img {
   transform: scale(50);
 }
 .l-nav__list {
+  display: none;
   opacity: 0;
   position: absolute;
   z-index: 999;
@@ -239,6 +265,7 @@ a:hover img {
   height: 100vh;
 }
 .l-nav.js-panelActive .l-nav__list {
+  display: block;
   opacity: 1;
 }
 .l-nav.js-panelActive .l-nav__item {
@@ -361,7 +388,64 @@ a:hover img {
   width: 100%;
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 1024px) {
+  .c-card {
+    width: 100%;
+  }
+}
 
+.c-button {
+  display: block;
+  width: 260px;
+  position: relative;
+  margin: 10px auto;
+  padding: 8px 1em;
+  background: #fff;
+  border: 1px solid #d0576b;
+  border-radius: 50px;
+  text-align: center;
+  color: #d0576b;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.c-button__btnripple:hover::before {
+  content: "";
+  /*絶対配置で波形の位置を決める*/
+  position: absolute;
+  left: 50%;
+  top: 0;
+  /*波形の形状*/
+  border: 1px solid #333;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /*はじめは不透明*/
+  opacity: 1;
+  /*アニメーションの設定*/
+  -webkit-animation: 1s circleanime forwards;
+          animation: 1s circleanime forwards;
+}
+
+@-webkit-keyframes circleanime {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes circleanime {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
 .c-list {
   padding: 0 0.6em;
 }
@@ -561,6 +645,11 @@ a:hover img {
   position: absolute;
   bottom: 0;
   background: linear-gradient(rgba(255, 255, 255, 0) 0, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+}
+@media only screen and (max-width: 1024px) {
+  .p-archive__list {
+    width: 100%;
+  }
 }
 .p-archive__categories {
   position: absolute;
@@ -790,12 +879,63 @@ a:hover img {
   font-family: FontAwesome;
   content: "\f099";
 }
+.p-sharebtn__item--line {
+  background: #06C857;
+  font-weight: bold;
+}
+.p-sharebtn__item--line a::before {
+  content: "LINE";
+  display: inline-block;
+}
 .p-sharebtn__item a {
   display: block;
   padding: 8px 0;
   text-align: center;
   text-decoration: none;
   color: #fff;
+}
+
+.p-privacy {
+  margin-top: 60px;
+  padding: 0 15px;
+}
+.p-privacy h2 {
+  margin: 4em -15px 2em;
+  padding: 1em 0.75em;
+  border-top: solid 2px #333;
+  border-bottom: solid 2px #333;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.p-privacy h3 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.p-privacy p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.p-privacy b {
+  font-weight: 700;
+}
+.p-privacy strong {
+  font-weight: 700;
+  background: linear-gradient(transparent 64%, #f7e140 0%);
+}
+.p-privacy ul {
+  margin-bottom: 2rem;
+  padding-left: 25px;
+  list-style: disc;
+}
+.p-privacy figure {
+  margin-bottom: 3rem;
+}
+.p-privacy figcaption {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
 }
 
 /*--------------------------------------*
