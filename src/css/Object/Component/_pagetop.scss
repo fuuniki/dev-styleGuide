@@ -2,6 +2,11 @@
   position: fixed;
   bottom: 2.5em;
   right: 2.5em;
+  @media only screen and (max-width: 1024px) {
+    bottom: 1.5em;
+    right: 1.5em;
+  }
+
   &__button {
     display: flex;
     align-items: center;

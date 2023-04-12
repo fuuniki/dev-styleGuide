@@ -10,6 +10,7 @@
     margin: 10px 0 40px;
   }
   &__list {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -23,7 +24,7 @@
       content: '';
       display: block;
       width: 100%;
-      height: 2.5em;
+      height: 3em;
       position: absolute;
       bottom: 0;
       background: linear-gradient(rgba(255,255,255,0) 0,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
@@ -48,5 +49,15 @@
     background-color: #d0576b;
     color: #fff;
     font-size: 12px;
+  }
+  &__pager {
+    display: flex;
+    justify-content: space-between;
+    &-right {
+      margin-left: auto;
+    }
+  }
+  &__element a {
+    margin-right: 10px;
   }
 }

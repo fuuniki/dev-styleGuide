@@ -1,0 +1,58 @@
+.hilite {
+  background-color: #e3b4be;
+}
+
+.c-pagetop__button {
+  border-color: #d0576b;
+  color: #d0576b;
+}
+
+/* slick */
+.slick-initialized{
+opacity: 1;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.slider-item {
+  height: auto;
+}
+.slider-img {
+  width: 100%;
+}
+.slick-slide {
+  height: auto;
+}
+
+.slick-dots {
+    position: relative;
+    bottom: 0;
+    padding: 20px 0;
+}
+.slick-dots li {
+  display: inline-block!important;
+  background: #e3b4be!important;
+  width: 60px!important;
+  height: 8px!important;
+  border-radius: 0;
+  cursor: pointer;
+}
+.slick-dots li.slick-active {
+  background: #af2767!important;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  opacity: 0;
+  color: transparent;
+}
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  top: calc(50% - 24px);
+}
+.slick-prev {
+  left: 25px;
+}
+.slick-next {
+  right: 25px;
+}
