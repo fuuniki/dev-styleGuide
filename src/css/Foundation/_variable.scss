@@ -15,15 +15,15 @@ $color-gray: #efefef;
 // ──────────────────────────────
 // breakpoint
 // ──────────────────────────────
-@mixin breakpoint($point) {
-	@if $point == tablet {
-		@media (min-width: 640px) {
-			@content;
-		}
-	}
-	@if $point == pc {
-		@media (min-width: 750px) {
-			@content;
-		}
-	}
+$breakpoint: (
+  sp: 'screen and (max-width: 767px)',
+  tab: 'screen and (max-width: 959px)',
+  pc-sm: 'screen and (max-width: 1024px)',
+  pc: 'screen and (min-width: 1025px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
 }

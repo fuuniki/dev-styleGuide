@@ -59,7 +59,7 @@ a:hover img {
 .l-wrapperFlex {
   display: flex;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 959px) {
   .l-wrapperFlex {
     flex-wrap: wrap;
   }
@@ -75,7 +75,7 @@ a:hover img {
   max-width: 1160px;
   margin: 0 auto;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .l-inner {
     width: 95%;
   }
@@ -103,8 +103,14 @@ a:hover img {
 }
 .l-header__logo {
   display: inline-block;
-  max-width: 40%;
+  max-width: 50%;
   text-decoration: none;
+  margin: 1em 0;
+}
+@media screen and (max-width: 767px) {
+  .l-header__logo {
+    margin: 0.5em 0;
+  }
 }
 .l-header__site-title {
   color: #333;
@@ -118,6 +124,7 @@ a:hover img {
   font-family: "Cabin", sans-serif;
   font-size: 1.2rem;
   font-weight: normal;
+  margin: 0;
 }
 
 /* l-footer */
@@ -152,7 +159,7 @@ a:hover img {
 .l-main {
   width: 70%;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 959px) {
   .l-main {
     width: 100%;
   }
@@ -170,7 +177,7 @@ a:hover img {
   margin-bottom: 20px;
   overflow: hidden;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 959px) {
   .l-aside {
     width: 100%;
   }
@@ -380,12 +387,11 @@ a:hover img {
   width: 100%;
   font-size: 1.2rem;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 959px) {
   .c-card {
     width: 100%;
   }
 }
-
 .c-button {
   display: block;
   width: 260px;
@@ -498,7 +504,7 @@ a:hover img {
   bottom: 2.5em;
   right: 2.5em;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 959px) {
   .c-pagetop {
     bottom: 1.5em;
     right: 1.5em;
@@ -530,7 +536,7 @@ a:hover img {
 .p-mainvisual__bg {
   background: #eee;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .p-mainvisual__inner {
     width: 100%;
   }
@@ -580,6 +586,26 @@ a:hover img {
   background: transparent;
 }
 
+@media screen and (max-width: 959px) {
+  .p-side__module-articleList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .p-side__module-articleList .c-title {
+    width: 100%;
+  }
+  .p-side__module-articleList .p-side__articleList {
+    width: 33.3333333333%;
+  }
+  .p-side__module-articleList .p-side__articleList:not(:last-child) {
+    border: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-side__module-articleList .p-side__articleList {
+    width: 100%;
+  }
+}
 .p-side__articleList {
   width: 100%;
 }
@@ -613,6 +639,16 @@ a:hover img {
 .p-latestArticle__list {
   margin-bottom: 10px;
 }
+@media screen and (max-width: 959px) {
+  .p-latestArticle__list {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-latestArticle__list {
+    width: 100%;
+  }
+}
 
 .p-archive__heading {
   margin-bottom: 20px;
@@ -645,7 +681,18 @@ a:hover img {
   bottom: 0;
   background: linear-gradient(rgba(255, 255, 255, 0) 0, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+  .p-archive__list {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 959px) {
+  .p-archive__list {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
   .p-archive__list {
     width: 100%;
   }
@@ -747,13 +794,12 @@ a:hover img {
   margin: 0 10px;
   border: 1px solid #d7d3d4;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 959px) {
   .p-banner__item {
     margin-bottom: 10px;
   }
 }
-
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 959px) {
   .p-article {
     padding: 32px 0 0;
   }

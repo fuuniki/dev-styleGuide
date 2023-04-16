@@ -1,4 +1,22 @@
 .p-side {
+  &__module-articleList {
+    @include mq(tab) {
+      display: flex;
+      flex-wrap: wrap;
+
+      .c-title { width: 100%; }
+      .p-side__articleList {
+        width: calc(100% / 3);
+        &:not(:last-child) {
+          border: 0;
+        }
+      }
+    }
+    @include mq(sp) {
+      .p-side__articleList { width: 100%; }
+    }
+
+  }
   &__articleList {
     width: 100%;
   }

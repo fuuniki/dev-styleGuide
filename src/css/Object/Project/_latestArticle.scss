@@ -3,5 +3,11 @@
   flex-wrap: wrap;
   &__list {
     margin-bottom: 10px;
+    @include mq(tab) {
+      width: calc( 100% / 3 );
+    }
+    @include mq(sp) {
+      width: 100%;
+    }
   }
 }
