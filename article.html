@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <!--ファビコンやブックマークアイコンの指定-->
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="thumbnail" content="metathum.jpg">
+
+    <!-- js library -->
+    <script src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+    <script src="bodyScrollLock.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet" >
+
+    <!-- css -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/src/css/style.css" rel="stylesheet">
+    <link href="/src/css/custom.css" rel="stylesheet">
+
+
+    <title>Style Guide for devlop the website</title>
+
+  </head>
+  <body>
+    <div class="l-wrapper">
+
+      <header class="l-header">
+        <div class="l-inner">
+          <div class="l-header__content">
+            <a class="l-header__logo" href="#">
+              <div class="l-header__site-title">fuuniki.tokyo</div>
+              <p class="l-header__site-description">旅の記録と写真をお届け</p>
+            </a>
+            <div class="l-nav__hamburger">
+              <span class="l-nav__hamburgerLine"></span>
+              <span class="l-nav__hamburgerLine"></span>
+              <span class="l-nav__hamburgerLine"></span>
+            </div>
+          </div>
+
+          <nav class="l-nav" id="js-global-nav">
+            <ul class="l-nav__list">
+              <li class="l-nav__item"><a href="#">Top</a></li>
+              <li class="l-nav__item"><a href="#">About</a></li>
+              <li class="l-nav__item"><a href="#">Article</a></li>
+              <li class="l-nav__item"><a href="#">Contact</a></li>
+            </ul>
+            <div class="l-nav__bg"></div>
+          </nav>
+
+        </div>
+      </header>
+
+      <div class="l-inner">
+        <div class="l-wrapperFlex">
+          <main class="l-main p-archive">
+
+            <article class="p-article">
+              <div class="p-article__header">
+                <h1 class="p-article__title">記事タイトル</h1>
+                <div class="p-article__element">
+                  <div class="p-article__elementList p-article__elementList--category">
+                    <a href="#">category</a>
+                  </div>
+                  <div class="p-article__elementList p-article__elementList--tag">
+                    <a href="#">tag</a>
+                  </div>
+                  <div class="p-article__elementList p-article__elementList--date">公開日</div>
+                </div>
+                <img class="p-article__eyeCatching" src="https://placehold.jp/900x600.png" alt="">
+              </div>
+              <div class="p-article__content">
+                <div class="componentTitle">タイトル</div>
+                <div class="componentName">h2タイトル</div>
+                <h2>h2タイトル</h2>
+                <div class="componentName">h3タイトル</div>
+                <h3>h3タイトル</h3>
+                <div class="componentName">h4タイトル</div>
+                <h4>h4タイトル</h4>
+
+                <div class="componentTitle">テキスト</div>
+                <div class="componentName">通常テキスト</div>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテ<br>キストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+                <h3>h3タイトル</h3>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテ<br>キストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+                <div class="componentName">リンクテキスト</div>
+                <p>テキスト<a>テキスト</a>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+                <div class="componentName">外部リンク</div>
+                <p><a href="#" target="_blank">テキストテキストテキストテキストテキストテキストテキストテキストテ</a></p>
+                <p><a href="#" target="_blank">テキスト</a>テキストテキストテキストテキストテキストテキストテキストテ</p>
+
+                <div class="componentName">PDFリンク</div>
+                <p><a href="#" target="_blank" class="link-pdf">テキストテキストテキストテキストテキストテキストテキストテキストテ</a></p>
+                <p><a href="#" target="_blank" class="link-pdf">テキスト</a>テキストテキストテキストテキストテキストテキストテキストテ</p>
+
+                <div class="componentName">太字</div>
+                <p><b>テキストテキストテキストテキストテキストテキストテキストテキストテ</b></p>
+
+                <div class="componentName">太字（色付き）</div>
+                <p><em>テキストテキストテキストテキストテキストテキストテキストテキストテ</em></p>
+
+                <div class="componentName">太字（ラインマーカー）</div>
+                <p><strong>テキストテキストテキストテキストテキストテキストテキストテキストテ</strong></p>
+
+                <div class="componentTitle">リスト</div>
+                <div class="componentName">通常リスト</div>
+                <ul>
+                  <li>リスト</li>
+                  <li>リスト
+                    <ul>
+                      <li>リスト</li>
+                      <li>リスト</li>
+                    </ul>
+                  </li>
+
+                </ul>
+
+                <div class="componentName">注釈リスト</div>
+                <ul class="note-list">
+                  <li>リスト</li>
+                </ul>
+                <ul class="annotation-list">
+                  <li>リスト</li>
+                </ul>
+
+                <div class="componentName">番号付きリスト</div>
+                <ol>
+                  <li>リスト</li>
+                  <li>リスト
+                    <div class="">
+                      <ol>
+                        <li>リスト</li>
+                        <li>リスト</li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li>
+                    <ol>
+                      <li>リスト</li>
+                      <li>リスト</li>
+                    </ol>
+                  </li>
+                </ol>
+
+                <div class="componentName">番号付き注釈リスト</div>
+                <ol class="note-num-list">
+                  <li>リスト</li>
+                  <li>リスト</li>
+                </ol>
+
+                <div class="componentTitle">メディア</div>
+                <div class="componentName">画像</div>
+                <figure>
+                  <img src="https://placehold.jp/750x500.png" alt="">
+                  <figcaption>フィギュアキャプション</figcaption>
+                </figure>
+
+                <div class="componentName">動画</div>
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Tpfbpacb5VU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+
+                <div class="componentTitle">引用</div>
+                <div class="componentName">引用</div>
+                <blockquote cite="http://">
+                  <p>テキスト<a>テキスト</a>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                  <p>テキストテキストテキストテキストテキストテキストテキストテキストテ<br>キストテキストテキストテキストテキストテキストテキストテキスト</p>
+                  <cite>出典：ここに引用元を入れる</cite>
+                </blockquote>
+
+                <div class="facility">
+                  ウルフギャング・ステーキハウス
+言わずと知れた、予約が取りにくい人気店です。
+ロイヤルハワイアンセンターC館３階にあるので、買い物ついでに利用できる点もポイント高めですね！
+実は、日本国内にも東京に4店舗、大阪、福岡に各1店舗ずつあるんですよね。
+なので、ハワイに行く前の予習でも、行った後の復習でも楽しめるんです！
+                </div>
+
+                <div class="componentTitle">埋め込み</div>
+                <div class="componentName">Googleマップ</div>
+                <div class="googlemap">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12542.032690845055!2d140.84192265!3d38.1980971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a25e8641e0033%3A0x7899b34dc15dc119!2z5rW344Gu6KaL44GI44KL5LiY5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1662478041753!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="componentName">ツイート</div>
+                <div class="tweet">
+                  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">７月には、一関高専学校説明会（釜石・盛岡・古川３会場）を実施します！ お申込み方法は下記の本校HPをご確認ください。<a href="https://t.co/6xgmxly8Ei">https://t.co/6xgmxly8Ei</a> <a href="https://t.co/BdEVy704qi">pic.twitter.com/BdEVy704qi</a></p>&mdash; 【公式】一関高専 (@ichinoseki_nct) <a href="https://twitter.com/ichinoseki_nct/status/1668098274803453952?ref_src=twsrc%5Etfw">June 12, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+
+              </div>
+              <div class="p-article__footer">
+                <div class="p-sharebtn">
+                  <div class="p-sharebtn__message"></div>
+                  <div class="p-sharebtn__list">
+                    <div class="p-sharebtn__item p-sharebtn__item--twitter">
+                      <a href="http://twitter.com/share?url=[シェアするURL]&text=[ツイート内テキスト]&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank"></a>
+                    </div>
+                    <div class="p-sharebtn__item p-sharebtn__item--facebook">
+                      <a href="https://www.facebook.com/share.php?u=https://www.fuuniki.tokyo/" rel="nofollow noopener noreferrer" target="_blank"></a>
+                    </div>
+                    <div class="p-sharebtn__item p-sharebtn__item--line">
+                      <a href="https://social-plugins.line.me/lineit/share?url=https://www.fuuniki.tokyo/" rel="nofollow noopener noreferrer" target="_blank">
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-article__pager">
+                  ページャー
+                </div>
+              </div>
+
+
+            </article>
+
+          </main>
+
+          <aside class="l-aside">
+            <div class="l-aside__module">
+              <h2 class="c-title">サイト内検索はこちら</h2>
+              <form class="c-search" action="/" method="get">
+                <label class="c-search__readerText" for="s"></label>
+                <input class="c-search__input" id="s" type="text"  name="s" value="" placeholder="記事を検索" required>
+                <input class="c-search__submit" type="submit">
+              </form>
+            </div>
+            <div class="l-aside__module p-side__module-articleList">
+              <h2 class="c-title">新着記事</h2>
+              <div class="c-card p-side__articleList">
+                <a class="c-card__imgLink" href="#"><img class="c-card__img" src="https://placehold.jp/1000x300.png" alt=""></a>
+                <div class="c-card__date"><a class="c-card__dateLink" href="#">2021年12月23日</a></div>
+                <h3 class="c-card__title"><a class="c-card__titleLink" href="#">記事のタイトル</a></h3>
+              </div>
+              <div class="c-card p-side__articleList">
+                <a class="c-card__imgLink" href="#"><img class="c-card__img" src="https://placehold.jp/1000x300.png" alt=""></a>
+                <div class="c-card__date"><a class="c-card__dateLink" href="#">2021年12月23日</a></div>
+                <h3 class="c-card__title"><a class="c-card__titleLink" href="#">記事のタイトル</a></h3>
+              </div>
+              <div class="c-card p-side__articleList">
+                <a class="c-card__imgLink" href="#"><img class="c-card__img" src="https://placehold.jp/1000x300.png" alt=""></a>
+                <div class="c-card__date"><a class="c-card__dateLink" href="#">2021年12月23日</a></div>
+                <h3 class="c-card__title"><a class="c-card__titleLink" href="#">記事のタイトル</a></h3>
+              </div>
+            </div>
+            <div class="l-aside__module">
+              <h2 class="c-title">カテゴリー</h2>
+              <ul class="p-side__list">
+                <li class="p-side__listItem">
+                  <a class="p-side__listLink" href="#">aa</a>
+                </li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+                <li class="p-side__listItem"><a class="p-side__listLink" href="#">aa</a></li>
+              </ul>
+            </div>
+            <div class="l-aside__module">
+              <h2 class="c-title">タグ</h2>
+              <ul class="p-side__list">
+                <li class="p-side__listItem">
+                  <a class="p-side__listLink" href="#">aa</a>
+                </li>
+                <li class="p-side__listItem">
+                  <a class="p-side__listLink" href="#">aa</a>
+                </li>
+              </ul>
+            </div>
+            <div class="l-aside__module">
+              <h2 class="c-title">月別アーカイブ</h2>
+              <ul class="p-monthlyArchive js-monthlyArchive">
+                <li class="p-monthlyArchive__year">
+                  <div class="p-monthlyArchive__yearHeading js-yearHeading"><span class="p-monthlyArchive__toggleIcon js-toggleIcon open"></span>2021年 (2)</div>
+                  <ul class="p-monthlyArchive__months js-months">
+                    <li class="p-monthlyArchive__month"><a class="p-monthlyArchive__monthLink" href="/">2021年12月</a> (2)</li>
+                    <li class="p-monthlyArchive__month"><a class="p-monthlyArchive__monthLink" href="/">2021年11月</a> (2)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+
+      <div class="p-banner">
+        <div class="l-inner">
+          <ul class="p-banner__list">
+            <li class="p-banner__item">
+              <a href="#"><img src="https://placehold.jp/200x60.png" alt=""></a>
+            </li>
+            <li class="p-banner__item">
+              <a href="#"><img src="https://placehold.jp/200x60.png" alt=""></a>
+            </li>
+            <li class="p-banner__item">
+              <a href="#"><img src="https://placehold.jp/200x60.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="c-pagetop">
+        <a class="c-pagetop__button" href="#"></a>
+      </div>
+
+      <footer class="l-footer">
+        <div class="l-inner">
+          <div class="l-footer__content">
+            <ul class="l-footer__nav">
+              <li class="l-footer__navItem"><a href="#">プライバシーポリシー</a></li>
+            </ul>
+            <small class="l-footer__copylight">© fuuniki.tokyo 2022</small>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- js -->
+    <script src="/src/js/script.js" async defer></script>
+
+  </body>
+</html>
