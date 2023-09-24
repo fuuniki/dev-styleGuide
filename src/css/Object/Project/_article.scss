@@ -86,22 +86,18 @@
     }
 
     h2 {
-      margin: 4em -15px 2em;
-      padding: 1em 0.75em;
+      margin: 4em 0 1em;
       font-size: 2.4rem;
       font-weight: bold;
-
-      padding: 0.75em 1em;
-      color: #d0576b;
-      border-left: 4px solid #d0576b;
-      background: #f4f4f4;
+      border-bottom: 5px solid #f4f1ea;
+      color: #333;
     }
     h3 {
       margin-bottom: 2rem;
       font-size: 2rem;
       font-weight: bold;
 
-      margin-top: 60px;
+      margin-top: 2em;
       padding-bottom: 10px;
       border-bottom: 1px solid #ccc;
       margin-bottom: 35px;
@@ -134,7 +130,9 @@
     h4 {
       font-size: 1.25em;
       font-weight: bold;
-padding: 0 0 10px;
+      border-left: 5px solid #f4f1ea;
+      margin-bottom: 1em;
+      padding-left: 12px;
     }
 
     p {
@@ -230,7 +228,8 @@ padding: 0 0 10px;
       width: 100%;
     }
     figcaption {
-      margin-top: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
       font-size: 1.4rem;
       color: #666;
       text-align: center;
@@ -297,6 +296,91 @@ padding: 0 0 10px;
 
     }
 
+    .EmbedBaseLinkCard {
+      margin-bottom: 12px;
+      border: 1px solid rgba(92,147,187,.2);
+      border-radius: 8px;
+      overflow: hidden;
+      &__link {
+        display: flex;
+        align-items: center;
+        font-size: 16.5px;
+        height: 120px;
+        line-height: 1.5;
+        transition: .2s;
+        color: rgba(0,0,0,.82);
+        text-decoration: none;
+        background: #fff;
+        @include mq(sp) {
+          font-size: 15px;
+        }
+        &:hover {
+          text-decoration: none;
+          background: rgba(239,246,251,.7);
+        }
+        &[target=_blank]::after {
+          content: '';
+          padding: 0;
+        }
+      }
+      &__main {
+        flex: 1 1;
+        padding: 0.8em 1.2em;
+        min-width: 0;
+        @include mq(sp) {
+          padding: 0.7em 1em;
+        }
+      }
+      &__title {
+        margin: 0;
+        font-size: 1em;
+        -webkit-line-clamp: 2;
+        max-height: 3.05em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        word-break: break-word;
+        font-weight: bold;
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+      &__description {
+        margin-top: 0.5em;
+        color: #77838c;
+        font-size: .8em;
+        -webkit-line-clamp: 1;
+        max-height: 1.55em;
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+      &__meta {
+        margin-top: 0.5em;
+        font-size: .78em;
+        display: flex;
+        align-items: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        @include mq(sp) {
+          margin-top: 0.4em;
+        }
+      }
+      &__thumbnail {
+        height: 120px;
+        max-width: 230px;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          flex-shrink: 0;
+        }
+      }
+    }
+
     .googlemap {
       margin-bottom: 2rem;
       height: 0;
@@ -313,7 +397,12 @@ padding: 0 0 10px;
     }
     .tweet {
       .twitter-tweet {
-        margin: auto;
+        margin: 0px auto 12px!important;
+      }
+    }
+    .instagram {
+      .instagram-media {
+        margin:  0px auto 12px!important;
       }
     }
 
