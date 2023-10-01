@@ -845,6 +845,57 @@ a:hover img {
   margin-top: 60px;
   padding: 0 15px;
 }
+.p-article__content .p-article__index {
+  padding: 15px 30px;
+  background: #F3F1EA;
+  border-radius: 10px;
+}
+.p-article__content .p-article__indexTitle {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #E2E8F0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.p-article__content .p-article__indexList {
+  margin-bottom: 0;
+}
+.p-article__content .p-article__indexList--child {
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+.p-article__content .p-article__indexList--child .p-article__indexItem {
+  font-size: 14px;
+}
+.p-article__content .p-article__indexList--child .p-article__indexItem::before {
+  border-color: #e3b4be;
+  border-width: 3px;
+}
+.p-article__content .p-article__indexItem {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.p-article__content .p-article__indexItem::before {
+  transition: all 0.3s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 5px 0 5px 6px;
+  border-color: transparent transparent transparent #af2767;
+}
+.p-article__content .p-article__indexLink {
+  color: #333;
+  text-decoration: none;
+}
+.p-article__content .p-article__indexLink:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.5s;
+}
 .p-article__content .componentTitle {
   display: flex;
   flex-flow: row;
