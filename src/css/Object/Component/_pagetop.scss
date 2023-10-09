@@ -1,4 +1,5 @@
 .c-pagetop {
+  display: none;
   position: fixed;
   bottom: 2.5em;
   right: 2.5em;
@@ -19,9 +20,9 @@
     width: 50px;
     height: 50px;
     background: #fff;
-    border: 1px solid #333;
+    border: 1px solid #d0576b;
     border-radius: 50%;
-    color: #333;
+    color: #d0576b;
     text-decoration: none;
     &::before {
       font-family: FontAwesome;

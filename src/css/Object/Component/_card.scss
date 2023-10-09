@@ -28,6 +28,7 @@
   }
   &__title {
     width: 100%;
+    margin: 0;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 5px 0 8px;
@@ -35,6 +36,9 @@
   &__titleLink {
     color: #333;
     text-decoration: none;
+    &:hover {
+      color: #d0576b;
+    }
   }
   &__categories {
     width: 100%;
@@ -42,9 +46,12 @@
   &__category {
     display: inline-block;
     margin: 0 5px 0 0;
+    padding: 4px 0.5em;
+    background: #d0576b;
     text-decoration: none;
-    color: #888;
+    color: #fff;
     font-size: 1.2rem;
+    line-height: 1;
     &::before {
       margin-right: 2px;
       font-family: FontAwesome;
